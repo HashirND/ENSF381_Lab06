@@ -1,27 +1,17 @@
 import React from 'react';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
-    // current year 2025
-    const currentYear = new Date().getFullYear();
-
-    // login status with bool
-    const isLoggedIn = true; // change to false
-
-    return (
-        <div>
-            {/* heading*/}
-            <h1>ENSF-381: Full Stack Web Development</h1>
-
-            {/* topic/}
-            <p>React Components</p>
-
-            {/* embedding JS expressions in JSX */}
-            <p>Current Year: {currentYear}</p>
-
-            {/* conditional rendering */}
-            <p>{isLoggedIn ? "Welcome back!" : "Please log in."}</p>
-        </div>
-    );
+  // main app comp
+  return (
+    <div>
+      <Home title="Home Page" description="welcome to our website." />
+      <About title="About Us" description="we are passionate about delivering quality experiences." />
+      <Contact title="Contact Us" description="feel free to reach out via email or phone." />
+    </div>
+  );
 }
 
 export default App;
