@@ -1,24 +1,24 @@
 import React from 'react';
 
 function App() {
-    // Store the current year using JavaScript's Date object
+    // current year 2025
     const currentYear = new Date().getFullYear();
 
-    // Define a boolean variable for login status
-    const isLoggedIn = true; // Change to false to test both cases
+    // login status with bool
+    const isLoggedIn = true; // change to false
 
     return (
         <div>
-            {/* JSX with an h1 heading */}
+            {/* heading*/}
             <h1>ENSF-381: Full Stack Web Development</h1>
 
-            {/* Paragraph describing the topic */}
+            {/* topic/}
             <p>React Components</p>
 
-            {/* Embedding JavaScript expressions in JSX */}
+            {/* embedding JS expressions in JSX */}
             <p>Current Year: {currentYear}</p>
 
-            {/* Conditional rendering using a ternary operator */}
+            {/* conditional rendering */}
             <p>{isLoggedIn ? "Welcome back!" : "Please log in."}</p>
         </div>
     );
